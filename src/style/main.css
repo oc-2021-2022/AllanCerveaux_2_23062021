@@ -64,3 +64,10 @@ video {
 p {
   color: var(--primary-color);
 }
+
+/* media screen desktop */
+@media (min-width: 40em) {
+  p {
+    color: red;
+  }
+}
