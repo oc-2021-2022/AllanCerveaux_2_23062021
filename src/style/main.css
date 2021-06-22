@@ -42,6 +42,10 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+a {
+  text-decoration: none;
+  color: initial;
+}
 
 :root {
   --background-color: #f2f2f2;
@@ -49,22 +53,91 @@ video {
   --secondary-color: #deebff;
   --primary-text: #212121;
   --secondary-text: #757575;
+  --divider-color: #bdbdbd;
   --font: 'Raleway', sans-serif;
-
   /* font size based on modularscale: https://www.modularscale.com */
   --font-size: 16px;
-  --font-size-small: 0.667em;
-  --font-size-normal: 1em;
-  --font-size-medium: 1.5em;
-  --font-size-big: 2.25em;
-  --font-size-hudge: 3.375em;
-  font-size: var(--font-size);
+  --size-small: 0.667em;
+  --size-normal: 1em;
+  --size-medium: 1.5em;
+  --size-big: 2.25em;
+  --size-hudge: 3.375em;
 }
 
 body {
   background-color: var(--background-color);
+  font-family: var(--font);
+  font-size: var(--font-size);
+  color: var(--primary-color);
+}
+
+/*
+	Navbar
+	@WIP: Need check on real device and refactor
+*/
+.hide-on-mobile {
+  display: none;
+}
+.item-register {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+.navbar-brand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--size-normal) var(--size-medium);
+}
+.navbar-items--right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navbar-items--right > .item {
+  text-align: center;
+  border-bottom: 3px solid var(--divider-color);
+  padding-bottom: var(--size-normal);
+  width: 50%;
+}
+.navbar-items--right > .item.item-active {
+  color: var(--primary-color);
+  border-bottom: 3px solid var(--primary-color);
 }
 
 /* media screen desktop */
 @media (min-width: 40em) {
+  /*
+		Navbar
+		@WIP: Need check on real device and refactor 
+	*/
+  .hide-on-desktop {
+    display: none;
+  }
+  .hide-on-mobile {
+    display: inline;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 var(--size-hudge);
+  }
+  .navbar-items--right {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+  }
+  .navbar-items--right > .item {
+    border-bottom: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5em;
+    border-top: 3px solid transparent;
+  }
+  .navbar-items--right > .item.item-active {
+    border-top: 3px solid var(--primary-color);
+    border-bottom: none;
+  }
 }
