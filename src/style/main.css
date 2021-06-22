@@ -43,6 +43,24 @@ video {
   vertical-align: baseline;
 }
 
+:root {
+  --background-color: #f2f2f2;
+  --primary-color: #0065fc;
+  --secondary-color: #deebff;
+  --primary-text: #212121;
+  --secondary-text: #757575;
+  --font: 'Raleway', sans-serif;
+
+  /* font size based on modularscale: https://www.modularscale.com */
+  --font-size: 16px;
+  --font-size-small: 0.667em;
+  --font-size-normal: 1em;
+  --font-size-medium: 1.5em;
+  --font-size-big: 2.25em;
+  --font-size-hudge: 3.375em;
+  font-size: var(--font-size);
+}
+
 p {
   color: var(--primary-color);
 }
