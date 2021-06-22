@@ -61,13 +61,10 @@ video {
   font-size: var(--font-size);
 }
 
-p {
-  color: var(--primary-color);
+body {
+  background-color: var(--background-color);
 }
 
 /* media screen desktop */
 @media (min-width: 40em) {
-  p {
-    color: red;
-  }
 }
