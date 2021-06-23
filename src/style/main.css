@@ -42,6 +42,10 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+a {
+  text-decoration: none;
+  color: initial;
+}
 
 :root {
   --background-color: #f2f2f2;
@@ -49,25 +53,100 @@ video {
   --secondary-color: #deebff;
   --primary-text: #212121;
   --secondary-text: #757575;
+  --divider-color: #bdbdbd;
   --font: 'Raleway', sans-serif;
-
   /* font size based on modularscale: https://www.modularscale.com */
   --font-size: 16px;
-  --font-size-small: 0.667em;
-  --font-size-normal: 1em;
-  --font-size-medium: 1.5em;
-  --font-size-big: 2.25em;
-  --font-size-hudge: 3.375em;
-  font-size: var(--font-size);
+  --size-small: 0.667em;
+  --size-normal: 1em;
+  --size-medium: 1.5em;
+  --size-big: 2.25em;
+  --size-hudge: 3.375em;
 }
 
-p {
+body {
+  background-color: var(--background-color);
+  font-family: var(--font);
+  font-size: var(--font-size);
+  color: var(--primary-text);
+}
+.is-hide-on-desktop {
+  display: inline;
+}
+.is-hide-on-mobile {
+  display: none;
+}
+.is-primary {
   color: var(--primary-color);
+  font-weight: bold;
+}
+
+/*
+	Navbar
+	@WIP: Need check on real device and refactor
+*/
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.navbar > .brand {
+  flex: 1;
+}
+.navbar > .item,
+.navbar > .brand {
+  padding: var(--size-normal);
+}
+
+.items {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.items > .item {
+  padding: var(--size-normal) 0;
+  width: 50%;
+  text-align: center;
+  border-bottom: 0.296em var(--secondary-color) solid;
+}
+.item.is-active {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 /* media screen desktop */
 @media (min-width: 40em) {
-  p {
-    color: red;
+  .is-hide-on-desktop {
+    display: none;
+  }
+  .is-hide-on-mobile {
+    display: inline;
+  }
+
+  /*
+		Navbar
+		@WIP: Need check on real device and refactor 
+	*/
+  .navbar {
+    flex-wrap: nowrap;
+  }
+  .navbar > .brand {
+    padding: 0 var(--size-hudge);
+  }
+  .navbar > .items.right-align {
+    justify-content: flex-end;
+  }
+  .items {
+    display: flex;
+    width: 50%;
+  }
+  .items > .item {
+    width: 25%;
+    border-bottom: unset;
+    border-top: 0.296em var(--secondary-color) solid;
+    line-height: var(--size-hudge);
+  }
+  .item.is-active {
+    border-color: var(--primary-color);
   }
 }
