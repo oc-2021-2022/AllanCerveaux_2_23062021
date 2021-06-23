@@ -34,6 +34,7 @@ header,
 menu,
 nav,
 section,
+button,
 video {
   margin: 0;
   padding: 0;
@@ -53,7 +54,8 @@ a {
   --secondary-color: #deebff;
   --primary-text: #212121;
   --secondary-text: #757575;
-  --divider-color: #bdbdbd;
+  --grey-lighter: #eaeaea;
+  --white: #ffffff;
   --font: 'Raleway', sans-serif;
   /* font size based on modularscale: https://www.modularscale.com */
   --font-size: 16px;
@@ -90,6 +92,11 @@ body {
 .subtitle {
   font-size: var(--size-normal);
   font-weight: lighter;
+}
+
+.icon {
+  font-size: var(--size-normal);
+  color: var(--primary-text);
 }
 
 .is-1 {
@@ -151,7 +158,38 @@ body {
 /*
 	Search and Filter component
 */
-
+.search {
+  margin: var(--size-normal) 0;
+}
+.search-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.132em;
+  border-radius: var(--size-normal);
+  background-color: var(--grey-lighter);
+}
+.search-input > .icon {
+  padding: 0 var(--size-normal);
+}
+.search-input > input[type='text'] {
+  background-color: var(--background-color);
+  padding: var(--size-normal);
+  flex-grow: 1;
+}
+.search-input > input[type='text']::placeholder {
+}
+.search-input > .btn {
+  padding: var(--size-normal);
+  font-size: var(--size-normal);
+  border-radius: var(--size-small);
+}
+.search-input > .btn.is-primary {
+  background-color: var(--primary-color);
+}
+.search-input > .btn > .icon {
+  color: var(--white);
+}
 /* 
 	Media screen desktop
 */
