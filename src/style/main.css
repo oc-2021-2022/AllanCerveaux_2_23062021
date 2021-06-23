@@ -116,10 +116,10 @@ body {
 
 /* media screen desktop */
 @media (min-width: 40em) {
-  .hide-on-desktop {
+  .is-hide-on-desktop {
     display: none;
   }
-  .hide-on-mobile {
+  .is-hide-on-mobile {
     display: inline;
   }
 
