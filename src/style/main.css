@@ -70,72 +70,83 @@ body {
   font-size: var(--font-size);
   color: var(--primary-text);
 }
+.is-hide-on-desktop {
+  display: inline;
+}
+.is-hide-on-mobile {
+  display: none;
+}
+.is-primary {
+  color: var(--primary-color);
+  font-weight: bold;
+}
 
 /*
 	Navbar
 	@WIP: Need check on real device and refactor
 */
-.hide-on-mobile {
-  display: none;
-}
-.item-register {
-  font-weight: bold;
-  color: var(--primary-color);
-}
-.navbar-brand {
+.navbar {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
-  padding: var(--size-normal) var(--size-medium);
 }
-.navbar-items--right {
+.navbar > .brand {
+  flex: 1;
+}
+.navbar > .item,
+.navbar > .brand {
+  padding: var(--size-normal);
+}
+
+.items {
+  width: 100%;
   display: flex;
+  justify-content: space-around;
 }
-.navbar-items--right > .item {
-  text-align: center;
-  border-bottom: 3px solid var(--divider-color);
-  padding-bottom: var(--size-normal);
+.items > .item {
+  padding: var(--size-normal) 0;
   width: 50%;
+  text-align: center;
+  border-bottom: 0.296em var(--secondary-color) solid;
 }
-.navbar-items--right > .item.item-active {
+.item.is-active {
   color: var(--primary-color);
-  border-bottom: 3px solid var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 /* media screen desktop */
 @media (min-width: 40em) {
-  /*
-		Navbar
-		@WIP: Need check on real device and refactor 
-	*/
   .hide-on-desktop {
     display: none;
   }
   .hide-on-mobile {
     display: inline;
   }
+
+  /*
+		Navbar
+		@WIP: Need check on real device and refactor 
+	*/
   .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .navbar > .brand {
     padding: 0 var(--size-hudge);
   }
-  .navbar-items--right {
-    display: flex;
-    align-items: center;
-    width: 30%;
+  .navbar > .items.right-align {
+    justify-content: flex-end;
   }
-  .navbar-items--right > .item {
-    border-bottom: none;
-    padding: 0;
+  .items {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 5em;
-    border-top: 3px solid transparent;
+    width: 50%;
   }
-  .navbar-items--right > .item.item-active {
-    border-top: 3px solid var(--primary-color);
-    border-bottom: none;
+  .items > .item {
+    width: 25%;
+    border-bottom: unset;
+    border-top: 0.296em var(--secondary-color) solid;
+    line-height: var(--size-hudge);
+  }
+  .item.is-active {
+    border-color: var(--primary-color);
   }
 }
