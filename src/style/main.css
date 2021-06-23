@@ -57,6 +57,7 @@ a {
   --font: 'Raleway', sans-serif;
   /* font size based on modularscale: https://www.modularscale.com */
   --font-size: 16px;
+  --size-smaller: 0.444em;
   --size-small: 0.667em;
   --size-normal: 1em;
   --size-medium: 1.5em;
@@ -70,12 +71,46 @@ body {
   font-size: var(--font-size);
   color: var(--primary-text);
 }
+
+.container {
+  padding: var(--size-normal);
+}
 .is-hide-on-desktop {
   display: inline;
 }
 .is-hide-on-mobile {
   display: none;
 }
+
+.title {
+  font-size: var(--size-normal);
+  font-weight: bold;
+  margin: var(--size-smaller) 0;
+}
+.subtitle {
+  font-size: var(--size-normal);
+  font-weight: lighter;
+}
+
+.is-1 {
+  font-size: var(--size-hudge);
+}
+.is-2 {
+  font-size: var(--size-big);
+}
+.is-3 {
+  font-size: var(--size-medium);
+}
+.is-4 {
+  font-size: var(--size-normal);
+}
+.is-5 {
+  font-size: var(--size-small);
+}
+.is-6 {
+  font-size: var(--size-smaller);
+}
+
 .is-primary {
   color: var(--primary-color);
   font-weight: bold;
@@ -83,7 +118,6 @@ body {
 
 /*
 	Navbar
-	@WIP: Need check on real device and refactor
 */
 .navbar {
   display: flex;
@@ -114,7 +148,13 @@ body {
   border-color: var(--primary-color);
 }
 
-/* media screen desktop */
+/*
+	Search and Filter component
+*/
+
+/* 
+	Media screen desktop
+*/
 @media (min-width: 40em) {
   .is-hide-on-desktop {
     display: none;
@@ -125,7 +165,6 @@ body {
 
   /*
 		Navbar
-		@WIP: Need check on real device and refactor 
 	*/
   .navbar {
     flex-wrap: nowrap;
