@@ -319,4 +319,15 @@ body {
       opacity: 1;
     }
   }
+
+  /* 
+		Message component
+	*/
+  .message {
+    align-items: center;
+  }
+  .message > .icon {
+    height: var(--size-smaller);
+    padding: var(--size-small) var(--size-normal) var(--size-normal) var(--size-normal);
+  }
 }
