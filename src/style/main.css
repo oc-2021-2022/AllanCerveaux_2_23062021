@@ -191,6 +191,36 @@ body {
 .search-input > .btn > .icon {
   color: var(--white);
 }
+
+/*
+	Filters component
+*/
+.filters {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.filters > .title {
+  width: 100%;
+}
+
+.filter {
+  border: var(--grey-lighter) 2px solid;
+  border-radius: var(--size-hudge);
+  margin: var(--size-smaller) var(--size-smaller) var(--size-smaller) 0;
+}
+
+.filter > .icon {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  padding: var(--size-normal);
+  border-radius: var(--size-hudge);
+}
+.filter > .title {
+  margin: 0 var(--size-normal);
+}
+
 /* 
 	Media screen desktop
 */
