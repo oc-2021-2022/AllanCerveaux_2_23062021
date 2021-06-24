@@ -156,7 +156,7 @@ body {
 }
 
 /*
-	Search and Filter component
+	Search component
 */
 .search {
   margin: var(--size-normal) 0;
@@ -176,6 +176,7 @@ body {
   background-color: var(--background-color);
   padding: var(--size-normal);
   flex-grow: 1;
+  font-weight: bold;
 }
 .search-input > input[type='text']::placeholder {
 }
@@ -225,5 +226,16 @@ body {
   }
   .item.is-active {
     border-color: var(--primary-color);
+  }
+
+  /* Search Compoenent */
+  .search {
+    width: 25%;
+  }
+  .search-input > .btn {
+    border-radius: 0 var(--size-normal) var(--size-normal) 0;
+  }
+  .search-input > .btn > span {
+    color: var(--white);
   }
 }
