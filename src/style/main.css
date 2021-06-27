@@ -242,9 +242,6 @@ body {
   margin: 0 var(--size-smaller);
 }
 
-.lodging-and-trending {
-}
-
 /*
 	Trending component
 */
@@ -253,7 +250,7 @@ body {
 }
 .trending > .trending-header {
   display: flex;
-  justify-content: start;
+  justify-content: space-around;
   align-items: center;
 }
 .trending > .trending-header > .title {
@@ -411,5 +408,51 @@ body {
   .message > .icon {
     height: var(--size-smaller);
     padding: var(--size-small) var(--size-normal) var(--size-normal) var(--size-normal);
+  }
+
+  /*
+
+	*/
+  .lodging-and-trending {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  .trending,
+  .lodging {
+    border-radius: var(--size-normal);
+  }
+
+  .trending {
+    width: 20%;
+    padding: var(--size-medium) var(--size-hudge);
+  }
+  .trending > .cards {
+    justify-content: space-between;
+    height: 90%;
+  }
+  .trending > .cards > .card {
+  }
+  .trending > .cards > .card > .card-body {
+    width: 50%;
+  }
+  .trending > .cards > .card > .card-image {
+    width: 40%;
+  }
+  .lodging {
+    width: 60%;
+    padding: var(--size-medium) var(--size-hudge);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--grey-lighter);
+  }
+  .lodging > .cards {
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .lodging > .cards > .card {
+    width: 30%;
   }
 }
