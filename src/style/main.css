@@ -324,7 +324,7 @@ body {
 /* 
 	Media screen desktop
 */
-@media (min-width: 40em) {
+@media (min-width: 50em) {
   .container {
     padding: var(--size-normal) var(--size-hudge);
   }
