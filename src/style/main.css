@@ -179,8 +179,6 @@ body {
   flex-grow: 1;
   font-weight: bold;
 }
-.search-input > input[type='text']::placeholder {
-}
 .search-input > .btn {
   padding: var(--size-normal);
   font-size: var(--size-normal);
@@ -454,8 +452,6 @@ body {
     justify-content: space-between;
     height: 90%;
   }
-  .trending > .cards > .card {
-  }
   .trending > .cards > .card > .card-body {
     width: 50%;
   }
@@ -509,7 +505,7 @@ body {
     width: 45%;
   }
   .activities-body > .cards > .card.card-trending > .card-image {
-    height: 90%;
+    flex-grow: 1;
   }
   .activities-body > .cards > .two-cards {
     height: 100%;
