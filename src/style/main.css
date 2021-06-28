@@ -322,6 +322,25 @@ body {
 }
 
 /* 
+	Footer
+*/
+.footer {
+  background-color: var(--grey-lighter);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 25.629em;
+}
+.footer > section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.footer > section > ul > li {
+  list-style: none;
+  margin: var(--size-small) 0;
+}
+/* 
 	Media screen desktop
 */
 @media (min-width: 50em) {
