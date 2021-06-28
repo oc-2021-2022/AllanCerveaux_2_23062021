@@ -525,4 +525,17 @@ body {
     height: 40%;
     margin: 0;
   }
+
+  /* 
+		Footer
+	*/
+  .footer {
+    height: 17.391em;
+    margin-top: var(--size-hudge);
+    flex-direction: row;
+  }
+  .footer > section {
+    width: 30%;
+    justify-content: center;
+  }
 }
