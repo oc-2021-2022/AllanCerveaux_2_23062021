@@ -414,7 +414,7 @@ body {
   }
 
   /*
-
+		Lodging and Trending
 	*/
   .lodging-and-trending {
     display: flex;
@@ -458,5 +458,52 @@ body {
   }
   .lodging > .cards > .card {
     width: 30%;
+  }
+
+  /* 
+		Activities
+	*/
+  .activities {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .activities > .title {
+    flex-grow: 1;
+  }
+  .activities > .activities-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .activities > .activities-body > .cards {
+    width: 45%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .activities-body > .cards > .card > .card-body,
+  .activities-body > .cards > .two-cards > .card > .card-body {
+    justify-content: center;
+  }
+  .activities-body > .cards > .card.card-trending {
+    height: 100%;
+    width: 45%;
+  }
+  .activities-body > .cards > .card.card-trending > .card-image {
+    height: 90%;
+  }
+  .activities-body > .cards > .two-cards {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .activities-body > .cards > .two-cards > .card:first-child {
+    height: 50%;
+  }
+  .activities-body > .cards > .two-cards > .card {
+    height: 40%;
+    margin: 0;
   }
 }
