@@ -325,6 +325,9 @@ body {
 	Media screen desktop
 */
 @media (min-width: 40em) {
+  .container {
+    padding: var(--size-normal) var(--size-hudge);
+  }
   .is-hide-on-desktop {
     display: none;
   }
@@ -358,7 +361,7 @@ body {
     border-color: var(--primary-color);
   }
 
-  /* Search Compoenent */
+  /* Search Component */
   .search {
     width: 25%;
   }
@@ -416,7 +419,8 @@ body {
   .lodging-and-trending {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: var(--size-normal) var(--size-hudge);
   }
   .trending,
   .lodging {
@@ -440,7 +444,7 @@ body {
     width: 40%;
   }
   .lodging {
-    width: 60%;
+    width: 65%;
     padding: var(--size-medium) var(--size-hudge);
     display: flex;
     flex-direction: column;
