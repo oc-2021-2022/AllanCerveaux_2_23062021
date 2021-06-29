@@ -501,33 +501,38 @@ body {
     justify-content: space-between;
   }
   .activities > .activities-body > .cards {
-    width: 45%;
+    width: 50%;
     flex-direction: row;
     justify-content: space-between;
   }
-  .activities-body > .cards > .card > .card-body,
-  .activities-body > .cards > .two-cards > .card > .card-body {
-    justify-content: center;
+  .activities-body > .cards > .two-cards {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .activities-body > .cards > .card.card-trending {
     height: 100%;
     width: 45%;
   }
+  .activities > .activities-body > .cards:first-child {
+    margin-right: var(--size-hudge);
+  }
+  .activities > .activities-body > .cards:first-child > .two-cards > .card:first-child > .card-image,
+  .activities > .activities-body > .cards:last-child > .two-cards > .card:last-child > .card-image,
   .activities-body > .cards > .card.card-trending > .card-image {
     flex-grow: 1;
   }
-  .activities-body > .cards > .two-cards {
-    height: 100%;
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  .activities > .activities-body > .cards:first-child > .two-cards > .card:first-child,
+  .activities > .activities-body > .cards:last-child > .two-cards > .card:last-child {
+    height: 55%;
   }
-  .activities-body > .cards > .two-cards > .card:first-child {
-    height: 50%;
-  }
-  .activities-body > .cards > .two-cards > .card {
+  .activities > .activities-body > .cards:first-child > .two-cards > .card:last-child,
+  .activities > .activities-body > .cards:last-child > .two-cards > .card:first-child {
     height: 40%;
+  }
+  .activities-body > .cards > .card.card-trending,
+  .activities-body > .cards > .two-cards > .card {
     margin: 0;
   }
 
