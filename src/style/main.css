@@ -374,6 +374,9 @@ body {
     border-top: 0.296em var(--secondary-color) solid;
     line-height: var(--size-hudge);
   }
+  .item:hover {
+    border-color: var(--primary-color);
+  }
   .item.is-active {
     border-color: var(--primary-color);
   }
