@@ -226,7 +226,7 @@ body {
 
 .message {
   display: flex;
-  margin: var(--size-big) var(--size-big) var(--size-big) 0;
+  margin-top: var(--size-big);
 }
 .message > .icon {
   height: var(--size-normal);
@@ -437,7 +437,7 @@ body {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    padding: var(--size-normal) var(--size-hudge);
+    padding: var(--size-hudge) 0;
   }
   .trending,
   .lodging {
