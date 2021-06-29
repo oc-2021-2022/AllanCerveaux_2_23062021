@@ -1,9 +1,9 @@
 # Reversia
 
-![status](https://img.shields.io/website?url=https%3A%2F%2Foc-2021-2022.github.io%2Freversia%2F)
-![build](https://github.com/oc-2021-2022/reversia/actions/workflows/deploy-to-gh-pages.yml/badge.svg)
-![issue](https://img.shields.io/github/issues/oc-2021-2022/reversia)
-![liscence](https://img.shields.io/github/license/oc-2021-2022/reversia)
+![status](https://img.shields.io/website?url=https%3A%2F%2Foc-2021-2022.github.io%2FP2_Allan_Cerveaux%2F)
+![build](https://github.com/oc-2021-2022/P2_Allan_Cerveaux/actions/workflows/deploy-to-gh-pages.yml/badge.svg)
+![issue](https://img.shields.io/github/issues/oc-2021-2022/P2_Allan_Cerveaux)
+![liscence](https://img.shields.io/github/license/oc-2021-2022/P2_Allan_Cerveaux)
 
 ![twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FCerveauxAllan)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&style=flat-square)](https://www.linkedin.com/in/allancerveaux/)
