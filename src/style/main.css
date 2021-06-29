@@ -342,6 +342,9 @@ body {
 	Media screen desktop
 */
 @media (min-width: 50em) {
+  a:hover {
+    text-decoration: underline;
+  }
   .container {
     padding: var(--size-normal) var(--size-hudge);
   }
@@ -373,6 +376,9 @@ body {
     border-bottom: unset;
     border-top: 0.296em var(--secondary-color) solid;
     line-height: var(--size-hudge);
+  }
+  .item:hover {
+    border-color: var(--primary-color);
   }
   .item.is-active {
     border-color: var(--primary-color);
