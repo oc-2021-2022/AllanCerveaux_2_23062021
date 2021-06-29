@@ -439,6 +439,9 @@ body {
   /*
 		Lodging and Trending
 	*/
+  .card > .card-body > .title {
+    font-size: 1.3em;
+  }
   .lodging-and-trending {
     display: flex;
     flex-direction: row-reverse;
