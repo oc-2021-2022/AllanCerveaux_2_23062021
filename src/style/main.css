@@ -540,9 +540,10 @@ body {
 		Footer
 	*/
   .footer {
-    height: 17.391em;
-    margin-top: var(--size-hudge);
+    height: 11.391em;
     flex-direction: row;
+    padding: var(--size-hudge);
+    margin-top: var(--size-hudge);
   }
   .footer > section {
     width: 30%;
