@@ -1,14 +1,14 @@
 # Reversia
 
-![status](https://img.shields.io/website?url=https%3A%2F%2Foc-2021-2022.github.io%2FP2_Allan_Cerveaux%2F)
-![build](https://github.com/oc-2021-2022/P2_Allan_Cerveaux/actions/workflows/deploy-to-gh-pages.yml/badge.svg)
-![issue](https://img.shields.io/github/issues/oc-2021-2022/P2_Allan_Cerveaux)
-![liscence](https://img.shields.io/github/license/oc-2021-2022/P2_Allan_Cerveaux)
+![status](https://img.shields.io/website?url=https%3A%2F%2Foc-2021-2022.github.io%2FAllanCerveaux_2_23062021%2F)
+![build](https://github.com/oc-2021-2022/AllanCerveaux_2_23062021/actions/workflows/deploy-to-gh-pages.yml/badge.svg)
+![issue](https://img.shields.io/github/issues/oc-2021-2022/AllanCerveaux_2_23062021)
+![liscence](https://img.shields.io/github/license/oc-2021-2022/AllanCerveaux_2_23062021)
 
 ![twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FCerveauxAllan)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&style=flat-square)](https://www.linkedin.com/in/allancerveaux/)
 
-[Reversia](https://oc-2021-2022.github.io/P2_Allan_Cerveaux/) est outils permettant la plannification des vaccances dans une ville choisis.
+[Reversia](https://oc-2021-2022.github.io/AllanCerveaux_2_23062021/) est outils permettant la plannification des vaccances dans une ville choisis.
 
 <img src="./maquettes/Desktop.png" alt="Website Template" width=500 />
 
@@ -43,4 +43,4 @@ Distribué sous la licence MIT. Voir `LICENCE` pour plus d'informations.
 ___
 [@CerveauxAllan]("https://twitter.com/CerveauxAllan") - [cerveauxallanjean@gmail.com]("cerveauxallanjean@gmail.com")
 
-Liens du projet: [https://oc-2021-2022.github.io/P2_Allan_Cerveaux](https://oc-2021-2022.github.io/P2_Allan_Cerveaux/)
+Liens du projet: [https://oc-2021-2022.github.io/AllanCerveaux_2_23062021](https://oc-2021-2022.github.io/AllanCerveaux_2_23062021/)
