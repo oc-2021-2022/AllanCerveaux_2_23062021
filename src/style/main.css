@@ -353,6 +353,14 @@ body {
   a:hover {
     text-decoration: underline;
   }
+
+  .search-and-filter,
+  .lodging-and-trending,
+  .activities {
+    margin: 0;
+    padding: 0;
+  }
+
   .container {
     padding: var(--size-normal) var(--size-hudge);
   }
