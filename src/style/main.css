@@ -75,9 +75,6 @@ body {
   color: var(--primary-text);
 }
 
-.container {
-  padding: var(--size-normal);
-}
 .is-hide-on-desktop {
   display: inline;
 }
@@ -124,6 +121,11 @@ body {
   font-weight: bold;
 }
 
+.search-and-filter,
+.lodging-and-trending,
+.activities {
+  margin: var(--size-hudge) 0;
+}
 /*
 	Navbar
 */
@@ -255,6 +257,10 @@ body {
   flex-grow: 1;
 }
 
+.trending > .trending-footer {
+  padding: var(--size-medium) 0;
+}
+
 .cards {
   display: flex;
   flex-direction: column;
@@ -341,10 +347,18 @@ body {
 /* 
 	Media screen desktop
 */
-@media (min-width: 50em) {
+@media (min-width: 1280px) {
   a:hover {
     text-decoration: underline;
   }
+
+  .search-and-filter,
+  .lodging-and-trending,
+  .activities {
+    margin: 0;
+    padding: 0;
+  }
+
   .container {
     padding: var(--size-normal) var(--size-hudge);
   }
@@ -387,6 +401,9 @@ body {
   /* Search Component */
   .search {
     width: 25%;
+  }
+  .search-input {
+    justify-content: flex-start;
   }
   .search-input > .btn {
     border-radius: 0 var(--size-normal) var(--size-normal) 0;
@@ -461,12 +478,6 @@ body {
     justify-content: space-between;
     height: 90%;
   }
-  .trending > .cards > .card > .card-body {
-    width: 50%;
-  }
-  .trending > .cards > .card > .card-image {
-    width: 40%;
-  }
   .lodging {
     width: 65%;
     padding: var(--size-medium) var(--size-hudge);
@@ -481,7 +492,7 @@ body {
     flex-wrap: wrap;
   }
   .lodging > .cards > .card {
-    width: 30%;
+    width: 30em;
   }
 
   /* 
