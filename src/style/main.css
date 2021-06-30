@@ -158,6 +158,11 @@ body {
   border-color: var(--primary-color);
 }
 
+.search-and-filter,
+.lodging-and-trending,
+.activities {
+  margin: var(--size-hudge) 0;
+}
 /*
 	Search component
 */
