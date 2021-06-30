@@ -125,9 +125,7 @@ body {
 .lodging-and-trending,
 .activities {
   margin: var(--size-hudge) 0;
-  padding: 0 var(--size-hudge);
 }
-
 /*
 	Navbar
 */
