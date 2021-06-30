@@ -257,6 +257,7 @@ body {
 /*
 	Trending component
 */
+
 .trending {
   background-color: var(--grey-lighter);
 }
@@ -273,6 +274,9 @@ body {
   padding: var(--size-medium) 0;
 }
 
+.lodging-footer {
+  margin: var(--size-medium) 0;
+}
 .cards {
   display: flex;
   flex-direction: column;
