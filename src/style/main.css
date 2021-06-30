@@ -156,6 +156,11 @@ body {
   border-color: var(--primary-color);
 }
 
+.search-and-filter,
+.lodging-and-trending,
+.activities {
+  margin: var(--size-hudge) 0;
+}
 /*
 	Search component
 */
@@ -253,6 +258,10 @@ body {
 }
 .trending > .trending-header > .title {
   flex-grow: 1;
+}
+
+.trending > .trending-footer {
+  padding: var(--size-medium) 0;
 }
 
 .cards {
