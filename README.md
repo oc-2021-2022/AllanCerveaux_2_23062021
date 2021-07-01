@@ -12,6 +12,11 @@
 
 <img src="./maquettes/Desktop.png" alt="Website Template" width=500 />
 
+## Liens Utiles 📑
+- [📜 Milesstones](https://github.com/oc-2021-2022/AllanCerveaux_2_23062021/milestones)
+- [🔖  Issues](https://github.com/oc-2021-2022/AllanCerveaux_2_23062021/issues)
+- [📋 Kanban](https://github.com/oc-2021-2022/AllanCerveaux_2_23062021/projects/1)
+
 ## Requirement 🧰 
 ___
 - node : `10.X>`
