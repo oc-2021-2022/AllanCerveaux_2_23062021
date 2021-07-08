@@ -451,7 +451,7 @@ body {
 		Filter component
 	*/
   .filters > .title {
-    flex-grow: none;
+    flex-grow: 0;
     width: initial;
   }
 
