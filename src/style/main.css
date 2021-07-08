@@ -142,13 +142,19 @@ body {
   align-items: center;
 }
 .navbar > .brand {
+  order: 0;
   flex: 1;
+}
+.navbar > .item:last-child {
+  order: 1;
+}
+.navbar > .items {
+  order: 2;
 }
 .navbar > .item,
 .navbar > .brand {
   padding: var(--size-normal);
 }
-
 .items {
   width: 100%;
   display: flex;
@@ -367,6 +373,17 @@ body {
 @media (min-width: 1280px) {
   a:hover {
     text-decoration: underline;
+  }
+
+  .navbar > .brand {
+    order: 0;
+    flex: 1;
+  }
+  .navbar > .item:last-child {
+    order: 2;
+  }
+  .navbar > .items {
+    order: 1;
   }
 
   .search-and-filter,
