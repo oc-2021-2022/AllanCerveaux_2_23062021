@@ -194,6 +194,7 @@ body {
   padding: 0 var(--size-normal);
 }
 .search-input > input[type='text'] {
+  width: 100%;
   background-color: var(--background-color);
   padding: var(--size-normal);
   flex-grow: 1;
