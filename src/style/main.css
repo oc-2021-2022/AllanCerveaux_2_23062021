@@ -371,7 +371,7 @@ body {
 /* 
 	Media screen desktop
 */
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   a:hover {
     text-decoration: underline;
   }
@@ -395,7 +395,7 @@ body {
   }
 
   .container {
-    padding: var(--size-normal) var(--size-hudge);
+    padding: var(--size-normal);
   }
   .is-hide-on-desktop {
     display: none;
@@ -445,6 +445,9 @@ body {
   }
   .search-input > .btn > span {
     color: var(--white);
+  }
+  .search-input > input[type='text'] {
+    width: initial;
   }
 
   /*
@@ -506,8 +509,8 @@ body {
   }
 
   .trending {
-    width: 25%;
-    padding: var(--size-medium) var(--size-hudge);
+    width: 30%;
+    padding: var(--size-medium);
     margin-left: var(--size-big);
   }
   .trending > .cards {
@@ -516,7 +519,7 @@ body {
   }
   .lodging {
     width: 65%;
-    padding: var(--size-medium) var(--size-hudge);
+    padding: var(--size-medium);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -528,7 +531,13 @@ body {
     flex-wrap: wrap;
   }
   .lodging > .cards > .card {
-    width: 30em;
+    width: 17em;
+  }
+  .lodging > .cards > .card > .card-body > .title {
+    font-size: 1.2em;
+  }
+  .lodging > .cards > .card.card-vertical {
+    height: 13em;
   }
 
   /* 
@@ -561,6 +570,9 @@ body {
   .activities-body > .cards > .card.card-trending {
     height: 100%;
     width: 45%;
+  }
+  .activities-body > .cards > .card > .card-body {
+    width: initial;
   }
   .activities > .activities-body > .cards:first-child {
     margin-right: var(--size-hudge);
@@ -595,5 +607,14 @@ body {
   .footer > section {
     width: 30%;
     justify-content: center;
+  }
+}
+
+@media (min-width: 1441px) {
+  .lodging > .cards > .card {
+    width: 30em;
+  }
+  .lodging > .cards > .card.card-vertical {
+    height: 17em;
   }
 }
