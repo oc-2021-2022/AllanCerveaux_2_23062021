@@ -193,6 +193,7 @@ section {
 .filters {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 .filters > .title {
   width: 100%;
@@ -216,7 +217,7 @@ section {
 }
 .filter > .title {
   margin: 0.8em 1em 0.8em 0.5em;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 0.8em;
 }
 
@@ -350,6 +351,7 @@ section {
 .activities > .activities-body > .cards > .two-cards > .card > .card-body > .title {
   margin: 0;
 }
+
 /* 
 	Footer
 */
@@ -371,9 +373,109 @@ section {
 }
 
 /*
-	Tablet
+	Screen Tablet
 */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) {
+  /*
+		Search Component
+	*/
+  .search-input > .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .search-input > .btn::after {
+    font-family: 'Raleway';
+    content: 'Rechercher';
+  }
+
+  /*
+		Filter
+	*/
+  .filters > .title {
+    margin-right: 1.5em;
+    width: min-content;
+  }
+
+  /*
+		Lodging and Trending
+	*/
+  .lodging-and-trending {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+
+  /*
+		Lodging
+	*/
+  .lodging {
+    width: 50%;
+    border-radius: 1em;
+    background-color: var(--grey-lighter);
+  }
+  .lodging > .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .lodging > .cards > .card {
+    width: 45%;
+  }
+  .lodging > .cards > .card > .card-body {
+    width: 100%;
+    padding: 0.5em var(--size-small);
+  }
+  /*
+	Trending
+	*/
+  .trending {
+    width: 30%;
+    border-radius: 1em;
+    background-color: var(--grey-lighter);
+  }
+
+  .trending > .cards > .card {
+    height: 9.5em;
+  }
+  /*
+		Activities
+	*/
+  .activities {
+    background-color: unset;
+  }
+  .activities > .activities-body {
+    display: flex;
+    justify-content: space-between;
+  }
+  .activities > .activities-body > .cards {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+  }
+  .activities > .activities-body > .cards > .card,
+  .activities > .activities-body > .cards > .two-cards {
+    width: 45%;
+  }
+  .activities > .activities-body > .cards > .card.card-trending {
+    height: auto;
+  }
+  .activities > .activities-body > .cards > .card.card-trending > .card-image,
+  .activities > .activities-body > .cards > .two-cards > .card > .card-image {
+    height: 90%;
+  }
+  .activities > .activities-body > .cards > .card.card-trending > .card-body,
+  .activities > .activities-body > .cards > .two-cards > .card > .card-body {
+    width: initial;
+    justify-content: center;
+  }
+
+  /*
+		Footer
+	*/
+  .footer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 /*
