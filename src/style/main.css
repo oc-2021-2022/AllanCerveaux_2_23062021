@@ -233,7 +233,7 @@ section {
   font-size: 0.5em;
   height: var(--size-normal);
   color: var(--primary-color);
-  padding: 1% var(--size-small);
+  padding: 0.4em var(--size-small);
   border: var(--secondary-color) 2px solid;
   border-radius: var(--size-hudge);
 }
@@ -449,12 +449,16 @@ section {
   }
   .activities > .activities-body > .cards {
     flex-direction: row;
-    justify-content: space-around;
-    width: 50%;
+    justify-content: space-between;
+    width: 49%;
+    height: 50vh;
   }
   .activities > .activities-body > .cards > .card,
   .activities > .activities-body > .cards > .two-cards {
-    width: 45%;
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .activities > .activities-body > .cards > .card.card-trending {
     height: auto;
@@ -468,13 +472,22 @@ section {
     width: initial;
     justify-content: center;
   }
+  .activities > .activities-body > .cards:first-child > .two-cards > .card:first-child,
+  .activities > .activities-body > .cards:last-child > .two-cards > .card:last-child {
+    height: 55%;
+  }
+  .activities > .activities-body > .cards:first-child > .two-cards > .card:last-child,
+  .activities > .activities-body > .cards:last-child > .two-cards > .card:first-child {
+    height: 35%;
+  }
 
   /*
 		Footer
 	*/
   .footer {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: var(--size-normal);
   }
 }
 
@@ -482,4 +495,52 @@ section {
 	Desktop
 */
 @media only screen and (min-width: 1024px) {
+  /*
+	  Navbar
+	*/
+  .navbar {
+    flex-wrap: nowrap;
+  }
+  .navbar > .brand {
+    flex-grow: 1;
+  }
+  .navbar > .items.right-align {
+    order: 0;
+    width: 40%;
+  }
+  .navbar > .items > .item {
+    border-top: 0.296em var(--secondary-color) solid;
+    padding: 2em 0;
+    border-bottom: 0;
+  }
+  .navbar > .items > .item.is-active {
+    border-color: var(--primary-color);
+  }
+
+  /*
+		Search and Filter
+	*/
+
+  .search-input {
+    justify-content: start;
+    width: max-content;
+  }
+  .trending {
+    width: 25%;
+  }
+  .trending > .cards > .card {
+    height: 7.5em;
+  }
+  .lodging {
+    width: 60%;
+  }
+  .lodging > .cards > .card {
+    width: 30%;
+  }
+  .card > .card-body > .title {
+    font-size: 0.8em;
+  }
+  .card > .card-body > .card-description {
+    font-size: 0.7em;
+  }
 }
