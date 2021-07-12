@@ -299,7 +299,7 @@ section {
 .card {
   display: flex;
   height: 7em;
-  margin: var(--size-normal) 0;
+  margin: var(--size-smaller) 0;
   background-color: var(--white);
   border-radius: var(--size-normal);
   padding: 0.3em;
@@ -452,6 +452,9 @@ section {
 
   .trending > .cards > .card {
     height: 9.5em;
+  }
+  .card {
+    margin: var(--size-small) 0;
   }
   /*
 		Activities
