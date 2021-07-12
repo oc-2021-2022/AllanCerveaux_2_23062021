@@ -544,3 +544,43 @@ section {
     font-size: 0.7em;
   }
 }
+
+/*
+	Desktop 1440px
+*/
+@media only screen and (min-width: 1440px) {
+  section,
+  .lodging-and-trending,
+  footer.footer {
+    padding-right: var(--size-hudge);
+    padding-left: var(--size-hudge);
+  }
+  .navbar {
+    padding: 0 var(--size-big);
+  }
+  .lodging {
+    width: 65%;
+  }
+  .lodging-and-trending {
+    justify-content: space-between;
+  }
+  .trending > .cards > .card {
+    height: 10.5em;
+  }
+
+  .lodging > .cards > .card {
+    height: 15em;
+  }
+  .card > .card-body > .title {
+    font-size: 1em;
+  }
+  .card > .card-body > .card-description {
+    font-size: 0.8em;
+  }
+  .card > .card-body > .card-meta {
+    font-size: 0.7em;
+  }
+  .activities > .activities-body > .cards {
+    height: 70vh;
+  }
+}
