@@ -1,5 +1,4 @@
 @import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;700;800;900&display=swap');
 
 /* Reset CSS */
 html,
@@ -208,7 +207,24 @@ section {
   background-color: var(--white);
   margin: 0.4em 0.2em;
 }
-
+.filter:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-color: transparent;
+  animation: filter-animation-hover 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes filter-animation-hover {
+  0% {
+    transform: translateZ(0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateZ(50px);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    opacity: 1;
+  }
+}
 .filter > .icon {
   color: var(--primary-color);
   padding: 0.8em;
@@ -437,6 +453,9 @@ section {
   .trending > .cards > .card {
     height: 9.5em;
   }
+  .card {
+    margin: var(--size-small) 0;
+  }
   /*
 		Activities
 	*/
@@ -488,6 +507,9 @@ section {
     flex-direction: row;
     justify-content: space-between;
     padding: var(--size-normal);
+  }
+  .footer > section {
+    width: 30%;
   }
 }
 
