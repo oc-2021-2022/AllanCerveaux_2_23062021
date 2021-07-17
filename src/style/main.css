@@ -121,16 +121,18 @@ body {
   display: flex;
   justify-content: space-around;
 }
+.item:active,
+.item:focus,
+.item:hover {
+  color: var(--primary-color);
+  border-color: var(--primary-color) !important;
+  font-weight: 600;
+}
 .items > .item {
   padding: var(--size-normal) 0;
   width: 50%;
   text-align: center;
   border-bottom: 0.296em var(--secondary-color) solid;
-}
-.item.is-active {
-  color: var(--primary-color);
-  border-color: var(--primary-color);
-  font-weight: 600;
 }
 
 section {
@@ -342,7 +344,7 @@ section {
 }
 
 .card.card-vertical {
-  height: 10em;
+  height: 14em;
   padding: 0;
   flex-direction: column;
 }
@@ -455,6 +457,9 @@ section {
   }
   .card {
     margin: var(--size-small) 0;
+  }
+  .card.card-vertical {
+    height: 10em;
   }
   /*
 		Activities
@@ -570,7 +575,7 @@ section {
 /*
 	Desktop 1440px
 */
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 2560px) {
   section,
   .lodging-and-trending,
   footer.footer {
