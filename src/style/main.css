@@ -313,7 +313,7 @@ section {
   border-radius: var(--size-normal) 0 0 var(--size-normal);
 }
 
-.card > .card-image > img {
+.card > .card-image > a > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
