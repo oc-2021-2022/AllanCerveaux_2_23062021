@@ -365,8 +365,8 @@ section {
 .activities > .activities-body > .cards > .two-cards > .card > .card-body {
   padding: 1em;
 }
-.activities > .activities-body > .cards > .card > .card-body > .title,
-.activities > .activities-body > .cards > .two-cards > .card > .card-body > .title {
+.activities > .activities-body > .cards > .card > .card-body > a > .title,
+.activities > .activities-body > .cards > .two-cards > .card > .card-body > a > .title {
   margin: 0;
 }
 
@@ -608,6 +608,6 @@ section {
     font-size: 0.7em;
   }
   .activities > .activities-body > .cards {
-    height: 70vh;
+    height: 50vh;
   }
 }
