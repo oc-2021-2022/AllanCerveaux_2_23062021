@@ -437,6 +437,7 @@ section {
     justify-content: space-between;
   }
   .lodging > .cards > .card {
+    padding: 0.3em 0.3em 0 0.3em;
     width: 45%;
   }
   .lodging > .cards > .card > .card-body {
@@ -561,6 +562,7 @@ section {
   .lodging {
     width: 60%;
   }
+
   .lodging > .cards > .card {
     width: 30%;
   }
